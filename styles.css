@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffffff, #b2f0e6, #91c9f7);
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.dark-mode {
+    background: linear-gradient(to right, #121212, #2c3e50, #1a1a1a);
+    color: #ffffff;
+}
+
+.dark-mode .container {
+    background: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode input, .dark-mode select {
+    background: #333;
+    color: white;
+    border: 1px solid #666;
+}
+
+#mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nominal-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    margin: 5px;
+}
+
+.nominal-btn.active {
+    background-color: #ffc107;
+    color: black;
+    font-weight: bold;
+}
+
+.tambah-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btn, .hapus-btn {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 2px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.hapus-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.saldo {
+    margin-top: 10px;
+    font-weight: bold;
+}
