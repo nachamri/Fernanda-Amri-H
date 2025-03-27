@@ -25,6 +25,13 @@ function tambahData() {
     }
 
     let nominal = parseInt(nominalBtn.dataset.value);
+    let tambahBtn = document.querySelector(".tambah-btn");
+
+    // 🔹 Efek perubahan warna saat tombol ditekan
+    tambahBtn.style.background = "#ff5733";  // Ubah warna menjadi merah saat diklik
+    setTimeout(() => {
+        tambahBtn.style.background = "#28a745";  // Kembali ke warna hijau setelah 300ms
+    }, 300);
 
     if (editIndex === -1) {
         dataList.push({ deskripsi, tanggal, nominal });
